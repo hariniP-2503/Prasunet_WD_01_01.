@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7; /* light gray background */
+    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7); /* subtle gradient */
+  }
+  
+  .stopwatch {
+    margin: 40px auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    background-color: #fff; /* white background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #fff, #f7f7f7); /* subtle gradient */
+  }
+  
+  .display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #6c5ce7; /* deep purple text */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* subtle text shadow */
+  }
+  
+  .button {
+    background-color: #ff69b4; /* pink button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* smooth transition on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  }
+  
+  .button:hover {
+    background-color: #ff7bac; /* darker pink on hover */
+  }
+  
+  .button:disabled {
+    background-color: #ccc; /* gray button when disabled */
+    cursor: not-allowed;
+  }
+  
+  .button + .button {
+    margin-top: 10px; /* add space between buttons */
+  }
+  
+  #lap-times {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  #lap-times li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* light gray border */
+    transition: background-color 0.2s ease; /* smooth transition on hover */
+    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7); /* subtle gradient */
+  }
+  
+  #lap-times li:hover {
+    background-color: #f0f0f0; /* light gray background on hover */
+  }
+  
+  #lap-times li:last-child {
+    border-bottom: none;
+  }
+  
+  /* add some animations to make it more appealing */
+  .stopwatch {
+    animation: fade-in 0.5s ease;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .button {
+    animation: pulse 2s ease infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* add some neon glow effects */
+  .display {
+    text-shadow: 0 0 10px #6c5ce7, 0 0 20px #6c5ce7, 0 0 30px #6c5ce7; /* neon glow */
+  }
+  
+  .button {
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* neon glow */
+  }
